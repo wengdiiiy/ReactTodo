@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>React App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        footer, section, header, aside, figure {
+            display: block;
+        }
+        body {
+            padding: 2em;
+            font-size: 15px;
+            font-family: helvetica, arial, sans-serif;
+        }
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        #app{
+            width: 500px;
+            margin: 0 auto;
+            text-align: center
+        }
+
+        input{
+            width: 384px;
+            line-height: 22px;
+            height: 22px;
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100px;
+            height: 24px;
+            background: #333;
+            color: #fff;
+            border-style: none;
+            padding: 5px 10px;
+        }
+
+        #todolist {
+            margin: 10px auto;
+        }
+        #todolist li {
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            position: relative;
+            border-radius: 2px;
+            list-style: none;
+            background: #eee;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <body>
+    <footer>
+    </footer>
+    </body>
+    <!--<script>-->
+        <!--(function(){-->
+            <!--var todo = document.querySelector( '#todolist' ),-->
+                <!--form = document.querySelector( 'form' ),-->
+                <!--field = document.querySelector( '#newitem' );-->
+
+            <!--form.addEventListener( 'submit', function( ev ) {-->
+                <!--todo.innerHTML += '<li>' + field.value + '</li>';-->
+                <!--field.value = '';-->
+                <!--field.focus();-->
+                <!--storestate();-->
+                <!--ev.preventDefault();-->
+            <!--}, false);-->
+
+            <!--todo.addEventListener( 'click', function( ev ) {-->
+                <!--var t = ev.target;-->
+                <!--if ( t.tagName === 'LI' ) {-->
+                    <!--if ( t.classList.contains( 'done' ) ) {-->
+                        <!--t.parentNode.removeChild( t );-->
+                    <!--} else {-->
+                        <!--t.classList.add( 'done' );-->
+                    <!--}-->
+                    <!--storestate();-->
+                <!--};-->
+                <!--ev.preventDefault();-->
+            <!--}, false);-->
+
+            <!--document.addEventListener( 'DOMContentLoaded', retrievestate, false );-->
+
+            <!--function storestate() {-->
+                <!--localStorage.todolist = todo.innerHTML;-->
+            <!--};-->
+
+            <!--function retrievestate() {-->
+                <!--if ( localStorage.todolist ) {-->
+                    <!--todo.innerHTML = localStorage.todolist;-->
+                <!--}-->
+            <!--};-->
+
+        <!--})();-->
+    <!--</script>-->
+</div>
+<script src="bundle.js"></script>
+</body>
+
+</html>
